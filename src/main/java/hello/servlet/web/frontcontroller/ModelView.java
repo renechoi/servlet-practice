@@ -18,4 +18,12 @@ public class ModelView {
     public String getViewName() {
         return viewName;
     }
+
+    public void setViewName(String viewName) {
+        this.viewName = viewName;
+    }
+
+    public void setModel(Map<String, Object> model) {
+        this.model = model;
+    }
 }
