@@ -11,6 +11,9 @@
     <title>Title</title>
 </head>
 <body>
+
+web-inf 안의 jsp
+
 <form action="save" method="post">
     username: <input type="text" name="username"/> age: <input type="text" name="age"/>
     <button type="submit">전송</button>

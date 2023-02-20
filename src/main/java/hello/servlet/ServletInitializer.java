@@ -11,6 +11,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        System.out.println("서블릿 시작 ");
         return application.sources(WebPractice1Application.class);
     }
 

@@ -1,5 +1,6 @@
 package hello.servlet.basic.request;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -36,6 +37,11 @@ public class RequestParamServlet extends HttpServlet {
         }
 
         response.getWriter().write("ok");
+        response.getWriter().write("<h1> 서블릿 테스트입니다 </h1>");
+
+        String viewPath = "/WEB-INF/views/save-result.jsp";
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher(viewPath);
+        requestDispatcher.forward(request,response);
 
 
     }
